@@ -38,7 +38,6 @@ function transform(arr) {
         newArr.splice(i, newArr[i + 1] ? 2 : 1);
       }
     }
-
     if (newArr[i] === "--double-prev") {
       if (newArr[i - 1]) {
         newArr.splice(i, 1, newArr[i - 1]);
@@ -46,7 +45,6 @@ function transform(arr) {
         newArr.splice(i, 1);
       }
     }
-
     if (newArr[i] === "--double-next") {
       if (newArr[i + 1]) {
         newArr.splice(i, 1, newArr[i + 1]);
